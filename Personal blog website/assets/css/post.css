@@ -1,0 +1,220 @@
+.post-header {
+  background-image: url("../img/web-2.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 15px;
+}
+
+.top-screen {
+  min-height: 7vh;
+}
+
+.post-container{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(250, 250, 250);
+  grid-template-columns: 25% repeat(4);
+  grid-template-rows: 5% 20% 75%;
+  grid-template-areas:
+    "ti ti ti ti"
+    "vtr auth ngrid ngrid"
+    "img img info info";
+}
+
+  .title {
+    grid-area: ti;
+    margin-bottom: 40px;
+  }
+  
+  .title h1 {
+    color: #000;
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .title h1::before {
+    content: "";
+    left: 0;
+    right: 30%;
+    position: absolute;
+    height: 2px;
+    background-color: #5f88e0;
+    bottom: -2px;
+  }
+  
+  .title p {
+    font-size: 12px;
+    color: #838383;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  .author-img {
+    grid-area: vtr;
+    max-width: 15%;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-bottom: 60px;
+  }
+  
+  .author-img img {
+    width: 100%;
+    border-radius: 4px;
+    display: block;
+  }
+
+  .author-info {
+    grid-area: auth;
+    max-width: 60%;
+    padding-left: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-top: 10px;
+  }
+  
+  .author-info #p{
+    color: rgb(41, 40, 40);
+  }
+
+  .author-info b{
+    color: #CF332A;
+  }
+    
+  .social {
+    padding-top: 10px;
+  }
+  
+  .social a {
+    height: 30px;
+    width: 30px;
+    background-color: #000;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0px 1px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+  }
+  
+  .social a:hover {
+    background-color: transparent;
+    color: #000;
+  }
+  
+  .social a .fa {
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .social a .fa:hover {
+    color: #000;
+  }
+
+  hr{
+    margin-bottom: 60px;
+  }
+
+  .post {
+    padding: 100px 15px;
+    background-color: #fff;
+    display: inline-block;
+    
+  }
+  
+  .img {
+    grid-area: img;
+    max-width: 50%;
+  }
+  
+  .img img {
+    width: 100%;
+    border-radius: 4px;
+    display: block;
+  }
+
+  figcaption{
+    color: #CF332A;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .text {
+    grid-area: info;
+    max-width: 50%;
+    padding-left: 30px;
+  }
+  
+  .text h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .text h6 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+  }
+  
+  .text h6 span {
+    color: #5f88e0;
+    position: relative;
+  }
+  
+  .text h6 span::before {
+    content: "";
+    left: 0;
+    right: 90%;
+    position: absolute;
+    height: 2px;
+    bottom: 0px;
+    transition: all 0.5s ease;
+  }
+  
+  .text h6 span:hover::before {
+    content: "";
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 2px;
+    background-color: #5f88e0;
+    bottom: 0px;
+  }
+  
+  .text p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+  }
+
+  .post-button {
+    max-width: 33.33%;
+    text-align: right;
+    margin-top: 30px;
+  }
+  
+  .post-button a {
+    font-size: 14px;
+    color: rgb(34, 34, 34);
+    background-color: transparent;
+    border: 1.5px solid rgb(34, 34, 34);
+    border-radius: 8px;
+    padding: 12px 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  
+  .post-button a:hover {
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+  }
